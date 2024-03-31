@@ -1,12 +1,21 @@
-list = [8 ,9, 10]
+flist = [8, 9, 10]
+print(flist)
 
-list.insert(1, 17)
-list.append(4)
-list.append(5)
-list.append(6)
-list.pop(0)
-list.sort()
-doubled_list = list * 2
-doubled_list.insert(3, 25)
+flist.pop(1)
+flist.insert(1, 17)
+print(flist)
 
-print(doubled_list)
+flist.append(4)
+flist.append(5)
+flist.append(6)
+print(flist)
+
+flist.pop(0)
+print(flist)
+
+flist.sort()
+print(flist) 
+
+doublelist = flist * 2
+doublelist.insert(3, 25)
+print(doublelist)
