@@ -1,12 +1,18 @@
-list = []
-
-list.append("banana")
-list.append(67)
-list.insert(3, "dog")
-list.insert(0, 909)
-# list.index("hi") //  'hi' is not in list
-# list.count(67) // []
-list.remove(67)
-list.pop(False)
-
-print(list)
+blacklist = []
+blacklist.append(67)
+blacklist.append(62.9)
+blacklist.append("Hi")
+blacklist.append(False)
+blacklist = blacklist + [8]
+blacklist = blacklist + [67]
+blacklist = blacklist + ["apple"]
+blacklist = blacklist + [6.5]
+blacklist.append("banana")
+blacklist.append(67)
+blacklist.insert(3, "dog")
+blacklist.insert(0, 909)
+blacklist.index("Hi")
+blacklist.count(67)
+blacklist.remove(67)
+blacklist.pop(4)
+print(blacklist)

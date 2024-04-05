@@ -27,7 +27,7 @@ remove.sort()
 
 
 print("Original list: ", list)
-print ("The sum of your list: ", sum)
+print ("The sum of your list: ", summ)
 print("The last item of your list: ", str(list[len(list) - 1]))
 print("The reverse Order of your List: ", rev)
 print("Number of Integer in list: ", num_int)
