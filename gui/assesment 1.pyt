@@ -15,21 +15,22 @@ def calculate():
             sum_value += i
         label1.config(text=f"The sum is {numbers_str} = {sum_value}")
     else:
-        label1.config(text="Please enter a Positive integer")
+        label1.config(text="Please enter a positive integer")
 
 window = tk.Tk()
-window.geometry("400x150")
 window.title("Summation")
 
-ttk.Label(window, text="Enter an integer: ", font=("Helvetica", 10)).grid(column=0, row=0, padx=10, pady=10)
+label = ttk.Label(window, text="Enter an integer: ", font=("Helvetica", 10))
+label.pack(pady=(50, 10))
 
 entry = tk.Entry(window, width=20)
-entry.grid(column=1, row=0)
+entry.pack()
 
-button1 = tk.Button(window, text="Summation", command= calculate)
-button1.grid(column=1, row=1, pady=10)
+button = tk.Button(window, text="Summation", command=calculate)
+button.pack(pady=10)
 
 label1 = tk.Label(window, text="")
-label1.grid(column=1, row=2)
+label1.pack()
 
+window.geometry("300x200")
 window.mainloop()
