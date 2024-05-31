@@ -26,7 +26,7 @@ label.pack(pady=(50, 10))
 entry = tk.Entry(window, width=20)
 entry.pack()
 
-button = tk.Button(window, text="Summation", command=calculate)
+button = tk.Button(window, text="Validate", command=calculate)
 button.pack(pady=10)
 
 label1 = tk.Label(window, text="")
